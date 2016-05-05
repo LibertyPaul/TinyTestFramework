@@ -9,7 +9,9 @@
 	const auto startTime = std::chrono::steady_clock::now();\
 	function();\
 	const auto endTime = std::chrono::steady_clock::now();\
-	std::cout << #function << "\t[PASSED]. duration: " << std::fixed << std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count() / 1000000. << "s" << std::endl << std::endl;\
+	const auto elapsed = endTime - startTime;\
+	const auto elapsedMicroseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();\
+	std::cout << #function << "\t[PASSED]. duration: " << std::fixed << elapsedMicroseconds / 1000000. << "s" << std::endl << std::endl;\
 }\
 
 #endif // TINYTESTFRAMEWORK_HPP
