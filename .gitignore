@@ -29,6 +29,6 @@
 
 #Qt
 *.pro
-*.user.pro
+*.pro.user
 *.pri
 *.autosave
