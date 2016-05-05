@@ -4,7 +4,7 @@
 #include <iostream>
 #include <chrono>
 
-#define TEST(function){\
+#define TTF_TEST(function){\
 	std::cout << #function << "\twas started" << std::endl;\
 	const auto startTime = std::chrono::steady_clock::now();\
 	function();\
