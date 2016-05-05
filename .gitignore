@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+#Qt
+*.pro
+*.user.pro
+*.pri
+*.autosave
